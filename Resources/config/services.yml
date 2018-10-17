@@ -1,0 +1,6 @@
+services:
+    umanit_sonata_media_liip_imagine_bridge.twig_extension.image_extension:
+        class: Umanit\SonataMediaLiipImagineBridgeBundle\Twig\Extension\ImageExtension
+        arguments: ['@sonata.media.pool', '@liip_imagine.cache.manager']
+        tags:
+            - { name: twig.extension }
